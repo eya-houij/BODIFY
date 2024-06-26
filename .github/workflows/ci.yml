@@ -19,19 +19,24 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '17'  # Specify the Java version you need
-          distribution: 'adopt'  # Specify the Java distribution
+          java-version: '17'
+          distribution: 'adopt'
           java-package: 'jdk'
           architecture: 'x64'
-          server-id: 'github'
-          server-username: ${{ github.actor }}
-          server-password: ${{ github.token }}
-          overwrite-settings: true
-          job-status: 'success'  # Optionally specify job status
+
+      - name: Set up Gradle
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'adopt'
+          java-package: 'jdk'
+          architecture: 'x64'
 
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon
+        env:
+          ORG_GRADLE_PROJECT_jdkPath: C:\Program Files\Java\jdk-17
+        run: |
+          ./gradlew build --no-daemon -Dorg.gradle.java.home="${ORG_GRADLE_PROJECT_jdkPath}"
 
       - name: Run tests
         run: ./gradlew test
-
