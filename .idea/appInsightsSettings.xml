@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.bodify" />
+                  <option name="mobileSdkAppId" value="1:242866808946:android:520d4a5f31abc98bf7baeb" />
+                  <option name="projectId" value="bodify-2606" />
+                  <option name="projectNumber" value="242866808946" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
