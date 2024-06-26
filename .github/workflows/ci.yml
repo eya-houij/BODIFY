@@ -20,10 +20,18 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'  # Specify the Java version you need
-          architecture: 'x64'  # Specify the architecture
+          distribution: 'adopt'  # Specify the Java distribution
+          java-package: 'jdk'
+          architecture: 'x64'
+          server-id: 'github'
+          server-username: ${{ github.actor }}
+          server-password: ${{ github.token }}
+          overwrite-settings: true
+          job-status: 'success'  # Optionally specify job status
 
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
       - name: Run tests
         run: ./gradlew test
+
