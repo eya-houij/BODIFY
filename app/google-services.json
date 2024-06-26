@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "242866808946",
+    "project_id": "bodify-2606",
+    "storage_bucket": "bodify-2606.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242866808946:android:520d4a5f31abc98bf7baeb",
+        "android_client_info": {
+          "package_name": "com.example.bodify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBijtrZjyRpECmACaAbbO1q2psZaAY6-eI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
