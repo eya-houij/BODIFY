@@ -1,4 +1,4 @@
-echo "name: CI
+name: CI
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-latest  # Specify windows-latest to run on Windows
 
     steps:
       - name: Checkout code
@@ -20,9 +20,24 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
+          distribution: 'adopt'
+          java-package: 'jdk'
+          architecture: 'x64'
+
+      - name: Set up Gradle
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'adopt'
+          java-package: 'jdk'
+          architecture: 'x64'
 
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon
+        env:
+          ORG_GRADLE_PROJECT_jdkPath: C:\Program Files\Java\jdk-17
+        run: |
+          ./gradlew build --no-daemon -Dorg.gradle.java.home="${ORG_GRADLE_PROJECT_jdkPath}"
+
 
       - name: Run tests
-        run: ./gradlew test"
+        run: ./gradlew test
