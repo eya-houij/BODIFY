@@ -70,7 +70,7 @@ Bodify isn't your average gym app—it's your ultimate sidekick for running a ki
 1. **Download Bodify:**
    - Clone the repo to your machine and get ready to rock:
      ```
-     git clone https://github.com/your/repository.git
+     git clone https://github.com/eya-houij/BODIFY.git
      ```
 
 2. **Fire Up Android Studio:**
