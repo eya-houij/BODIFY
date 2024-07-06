@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9C0B7"
+    tools:context=".view.SignInView">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#C8BFB6"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Google     "
+        android:textAlignment="center"
+        android:textColor="#273840"
+        android:textSize="24sp"
+        app:icon="@drawable/google__1_"
+        app:iconTint="#273840"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintMarginEnd="39dp"
+        app:layout_constraintMarginStart="39dp"
+        app:layout_constraintMarginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:strokeColor="#273840"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#C8BFB6"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Facebook    "
+        android:textAlignment="center"
+        android:textColor="#273840"
+        android:textSize="24sp"
+        app:icon="@drawable/google__1_"
+        app:iconTint="#273840"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintMarginEnd="39dp"
+        app:layout_constraintMarginStart="39dp"
+        app:layout_constraintMarginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:strokeColor="#273840"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="@string/or_log_in_with"
+        android:textAlignment="center"
+        android:textColor="#273840"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintMarginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="332dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#273840"
+        android:fontFamily="@font/akaya_telivigala"
+        android:shadowColor="#273840"
+        android:text="@string/log_in"
+        android:textAlignment="center"
+        android:textColor="#D6CDC4"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="360dp" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="@string/log_in"
+        android:textColor="#273840"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="270dp"
+        android:layout_marginTop="90dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="318dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="@font/akaya_telivigala"
+        android:hint="@string/email_or_phone_number"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:fontFamily="@font/akaya_telivigala"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/forgot"
+        android:fontFamily="@font/akaya_telivigala"
+        android:textColor="#3C3A3E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="265dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

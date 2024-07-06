@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BodifyApp</string>
+    <string name="sign_in">Sign In</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or_sign_up_with">Or sign up with -</string>
+    <string name="gym_name">Gym Name</string>
+    <string name="creation_date">Creation Date</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">email</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="first_name">First Name</string>
+    <string name="or_log_in_with">or log in with -</string>
+    <string name="email_or_phone_number">email or phone number</string>
+    <string name="password">password</string>
+    <string name="forgot">Forgot</string>
+    <string name="to_start_your_gym_journey">To Start Your Gym Journey</string>
+    <string name="all_you_need">All You Need</string>
+    <string name="are_you_a">Are You a</string>
+    <string name="welcome">Welcome .</string>
+</resources>
